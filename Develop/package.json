@@ -1,14 +1,15 @@
 {
-  "name": "note-taker",
+  "name": "RemembrAll",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic Note Taker application using Express.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Sean Connor",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
   }
 }
