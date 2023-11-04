@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 
 // Read the notes from the db.json file
 router.get('/api/notes', (req, res) => {
-  const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json', 'utf-8'));
+  const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json'), 'utf-8'));
   res.json(notes);
 });
 
@@ -14,7 +14,7 @@ router.post('/api/notes', (req, res) => {
   const newNote = req.body;
   newNote.id = uuidv4(); // Assign a unique ID using uuid
 
-  const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json', 'utf-8'));
+  const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json'), 'utf-8'));
   notes.push(newNote);
 
   // Write the updated notes array back to db.json
@@ -26,7 +26,7 @@ router.post('/api/notes', (req, res) => {
 // Delete a note by ID
 router.delete('/api/notes/:id', (req, res) => {
   const noteId = req.params.id;
-  const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json', 'utf-8'));
+  const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json'), 'utf-8'));
 
   // Filter out the note with the specified ID
   const updatedNotes = notes.filter((note) => note.id !== noteId);

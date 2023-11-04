@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Mac OS system files
+.DS_Store
+
+# npm debug log files
+npm-debug.log
+
+# Heroku-specific files (if deploying to Heroku)
+.env.heroku

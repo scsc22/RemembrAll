@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "title": "This is the title of my note",
+    "text": "this is the content of my first note.",
+    "id": "7249eda4-6ecd-4c14-867d-3c5665cec036"
+  },
+  {
+    "title": "2nd note",
+    "text": "also has content",
+    "id": "ea0ac785-0e0b-4b90-8153-3983ae805569"
+  }
+]
